@@ -47,10 +47,9 @@
                              Padding="32">
 
             <local:MultiSelectComboBox Width="200"
+                                       Text=" "
                                        materialDesign:HintAssist.Hint="{Binding DisplayString, TargetNullValue='Selection'}"
-                                       materialDesign:TextFieldAssist.HasClearButton="False"
-                                       IsEditable="False"
-                                       IsReadOnly="True"
+                                       materialDesign:TextFieldAssist.HasClearButton="True"
                                        Style="{StaticResource MaterialDesignComboBox}">
                 <local:MultiSelectComboBox.Resources>
                     <DataTemplate DataType="{x:Type local:CommandWrapperViewModel}">
